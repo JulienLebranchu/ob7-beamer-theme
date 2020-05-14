@@ -1,8 +1,8 @@
-HRI Beamer Theme
-================
+IRD-OB7 Beamer Theme
+====================
 
 A nice looking Beamer theme, based on HSRM Beamer theme by
-[Benjamin Weiss](mailto:Benjamin.Weiss@kreatiefton.de), with a
+[Benjamin Weiss](mailto:Benjamin.Weiss@kreatiefton.de) and HRI Beamer, with a
 few improvements like full-screen pictures and videos. [Download the
 pre-compiled demo presentation](https://github.com/severin-lemaignan/hri-beamer-theme/blob/master/presentation.pdf?raw=true).
 
