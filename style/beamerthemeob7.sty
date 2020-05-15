@@ -43,7 +43,7 @@
 %---------------------------------------------------------------------
 \newcommand{\rightTextArrow}{→}
 \newcommand{\quoted}[1]{›#1‹}
-\newcommand{\doublequoted}[1]{»#1«}
+\newcommand{\doublequoted}[1]{«#1»}
 
 \RequirePackage{xspace}
 \newcommand{\eg}{e.g.\xspace}
@@ -57,7 +57,7 @@
 %---------------------------------------------------------------------
 % Itemize
 %---------------------------------------------------------------------
-\setbeamertemplate{itemize item}{$\circ$}
+\setbeamertemplate{itemize item}{\textbullet}
 \setbeamertemplate{itemize subitem}{\rightTextArrow}
 \setbeamertemplate{itemize subsubitem}{--}
 
@@ -101,18 +101,18 @@
 
 % General
 \setbeamercolor{normal text}{fg=ob7BlueIRD}
-\setbeamercolor{structure}{fg=ob7RedDark}
+\setbeamercolor{structure}{fg=ob7BlueDark}
 \setbeamercolor{alerted text}{fg=ob7Red}
-\setbeamercolor{example text}{fg=white}
+\setbeamercolor{example text}{fg=ob7BlueLight}
 \setbeamercolor{copyright text}{fg=ob7BlueLight}
 \setbeamercolor{palette primary}{fg=ob7BlueDark}
 \setbeamercolor{palette secondary}{fg=ob7BlueDark,bg=ob7BlueLight}
 \setbeamercolor{palette tertiary}{fg=black,bg=ob7BlueLight}
 \setbeamercolor{palette quaternary}{fg=white, bg=ob7BlueDark}
 % Titlepage
-\setbeamercolor{title}{parent=normal text,fg=ob7BlueIRD}
-\setbeamercolor{subtitle}{parent=normal text}
-\setbeamercolor{institute}{parent=normal text}
+\setbeamercolor{title}{parent=normal text,fg=ob7Red}
+\setbeamercolor{subtitle}{parent=normal text, fg=ob7BlueIRD}
+\setbeamercolor{institute}{parent=normal text, fg=ob7BlueLight}
 % Content
 \setbeamercolor{frametitle}{parent=palette quaternary}
 % Blocks
@@ -127,7 +127,7 @@
 \setbeamercolor{note title}{fg=white, bg=ob7BlueDark}
 \setbeamercolor{note date}{parent=note title}
 % Page Number
-\setbeamercolor{page number in head/foot}{fg=ob7BlueDark}
+\setbeamercolor{page number in head/foot}{fg=ob7BlueLight}
 
 %---------------------------------------------------------------------
 % Fonts
@@ -141,7 +141,7 @@
 
 
 \usepackage{fontspec}
-%\setmainfont{Liberation Sans}
+\setmainfont{Liberation Sans}
 %\setmainfont{Flama}[Extension=.otf,UprightFont=*Light,BoldFont=*Medium,ItalicFont=*Italic]
 %\setsansfont{Flama}[Extension=.otf,UprightFont=*Light,BoldFont=*Medium,ItalicFont=*Italic]
 %\setsansfont{FlamaLight}[Extension=.otf]
@@ -182,8 +182,8 @@
     \AddToShipoutPictureFG*{\includegraphics[width=\paperwidth]{background.pdf}}
     \begin{minipage}[b][\paperheight]{\textwidth}
     \vspace*{5mm}
-    \includegraphics[height=14mm]{logo}\par
-    \vspace*{5mm}
+    \hspace{0.7\textwidth}\includegraphics[height=10mm]{partners}\par
+    \vspace*{10mm}
     \ifx\insertsubtitle\@empty%
     \else%
         {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}%
@@ -210,6 +210,8 @@
         {\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute\par}%
     \fi% 
     \vspace*{5mm}
+    \hspace{0.1\textwidth}\includegraphics[height=14mm]{logo}\par
+    \vspace*{2mm} 
     \end{minipage}
 }
 
@@ -404,7 +406,7 @@
         \ifdefequal{\bgCaption}{\empty}{%
         }{%
             \begin{tikzpicture}[remember picture,overlay]
-                \node at (-1, -4.5) [anchor=south west,shape=rectangle,fill=ob7Sec3Dark, opacity=0.7, align=right, text width=0.6\paperwidth]
+                \node at (-1, -4.5) [anchor=south west,shape=rectangle,fill=ob7BlueIRD, opacity=0.7, align=right, text width=0.6\paperwidth]
                 {\usebeamerfont{subtitle}\usebeamercolor[bg]{subtitle}\bgCaption\par};
             \end{tikzpicture}
         }%

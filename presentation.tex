@@ -15,7 +15,7 @@
 %--------------------------------------------------------------------------
 % Load theme
 %--------------------------------------------------------------------------
-\usetheme[noflama]{ob7}
+\usetheme{ob7}
 
 
 \usepackage{tikz}
@@ -30,7 +30,7 @@
 \subtitle{Demo Presentation}
 \date{\today}
 \author{Julien Lebranchu}
-\institute{OB7\\{\bf IRD}}
+\institute{OB7/UMR 248 MARBEC/{\bf IRD}}
 
 %--------------------------------------------------------------------------
 % Notes settings
@@ -275,7 +275,7 @@
 \begin{frame}{Picture with credit line}
     \begin{figure}
         \centering
-        \includegraphicscopyright[width=\linewidth]{photo.jpg}{Copyright EPFL
+        \includegraphicscopyright[width=.8\linewidth]{photo.jpg}{Copyright EPFL
         2014}
     \end{figure}
 \end{frame}
@@ -348,7 +348,7 @@
     \begin{figure}
         \centering
 
-        \resizebox{\paperwidth}{!}{%
+        \resizebox{.8\paperwidth}{!}{%
 
             \tikzset{subpart/.style={draw, font=\scriptsize, fill opacity=0.5, text opacity=1, fill=white!50}}
 
@@ -425,7 +425,7 @@
 
 \begin{frame}{Mindmap with TikZ}
     \centering
-    \begin{tikzpicture}[scale=0.88]
+    \begin{tikzpicture}[scale=0.8]
         %\tikzset{every child/.append style={level distance=250}}
         \path[mindmap,concept color=ob7BlueLight,text=ob7BlueDark]
         node[concept] {\TeX}
