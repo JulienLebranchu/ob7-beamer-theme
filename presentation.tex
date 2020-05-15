@@ -1,4 +1,4 @@
-\documentclass[compress]{beamer}
+\documentclass[compress,aspectratio=169]{beamer}
 
 %--------------------------------------------------------------------------
 % Common packages
@@ -15,7 +15,8 @@
 %--------------------------------------------------------------------------
 % Load theme
 %--------------------------------------------------------------------------
-\usetheme{hri}
+\usetheme[noflama]{ob7}
+
 
 \usepackage{tikz}
 \usetikzlibrary{calc,mindmap,backgrounds,positioning}
@@ -25,11 +26,11 @@
 %--------------------------------------------------------------------------
 % General presentation settings
 %--------------------------------------------------------------------------
-\title{HRI Beamer Theme}
+\title{Ob7 Beamer Theme}
 \subtitle{Demo Presentation}
 \date{\today}
-\author{Séverin Lemaignan}
-\institute{Cenrte for Neural Systems and Robotics\\{\bf Plymouth University}}
+\author{Julien Lebranchu}
+\institute{OB7\\{\bf IRD}}
 
 %--------------------------------------------------------------------------
 % Notes settings
@@ -43,7 +44,7 @@
 
 \maketitle
 
-\licenseframe{https://github.com/severin-lemaignan/hri-beamer-theme}
+\licenseframe{https://github.com/julienlebranchu/ob7-beamer-theme}
 
 %--------------------------------------------------------------------------
 % Table of contents
@@ -79,38 +80,46 @@
 
     \begin{multicols}{2}
 
-        \setbeamercolor{hriRedDemo}{fg=hriRed,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriRedDemo}
-            \texttt{hriRed}
+        \setbeamercolor{ob7RedDemo}{fg=ob7Red,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7RedDemo}
+            \texttt{ob7Red}
         \end{beamercolorbox}
-        \setbeamercolor{hriRedDarkDemo}{fg=hriRedDark,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriRedDarkDemo}
-            \texttt{hriRedDark}
+        \setbeamercolor{ob7RedDarkDemo}{fg=ob7RedDark,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7RedDarkDemo}
+            \texttt{ob7RedDark}
         \end{beamercolorbox}
-        \setbeamercolor{hriWarmGreyDarkDemo}{fg=hriWarmGreyDark,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriWarmGreyDarkDemo}
-            \texttt{hriWarmGreyDark}
+        \setbeamercolor{ob7BlueIRDDemo}{fg=ob7BlueIRD,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7BlueIRDDemo}
+            \texttt{ob7BlueIRD}
         \end{beamercolorbox}
-        \setbeamercolor{hriWarmGreyLightDemo}{fg=hriWarmGreyLight,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriWarmGreyLightDemo}
-            \texttt{hriWarmGreyLight}
+        \setbeamercolor{ob7BlueDarkDemo}{fg=ob7BlueDark,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7BlueDarkDemo}
+            \texttt{ob7BlueDark}
+        \end{beamercolorbox}
+        \setbeamercolor{ob7BlueLightDemo}{fg=ob7BlueLight,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7BlueLightDemo}
+            \texttt{ob7BlueLight}
         \end{beamercolorbox}
 
-        \setbeamercolor{hriRedDemoBg}{fg=white,bg=hriRed}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriRedDemoBg}
-            \texttt{hriRed}
+        \setbeamercolor{ob7RedDemoBg}{fg=white,bg=ob7Red}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7RedDemoBg}
+            \texttt{ob7Red}
         \end{beamercolorbox}
-        \setbeamercolor{hriRedDarkDemoBg}{fg=white,bg=hriRedDark}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriRedDarkDemoBg}
-            \texttt{hriRedDark}
+        \setbeamercolor{ob7RedDarkDemoBg}{fg=white,bg=ob7RedDark}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7RedDarkDemoBg}
+            \texttt{ob7RedDark}
         \end{beamercolorbox}
-        \setbeamercolor{hriWarmGreyDarkDemo}{fg=white,bg=hriWarmGreyDark}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriWarmGreyDarkDemo}
-            \texttt{hriWarmGreyDark}
+        \setbeamercolor{ob7BlueIRDDemo}{fg=white,bg=ob7BlueIRD}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7BlueIRDDemo}
+            \texttt{ob7BlueIRD}
         \end{beamercolorbox}
-        \setbeamercolor{hriWarmGreyLightDemo}{fg=white,bg=hriWarmGreyLight}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriWarmGreyLightDemo}
-            \texttt{hriWarmGreyLight}
+        \setbeamercolor{ob7BlueDarkDemo}{fg=white,bg=ob7BlueDark}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7BlueDarkDemo}
+            \texttt{ob7BlueDark}
+        \end{beamercolorbox}
+        \setbeamercolor{ob7BlueLightDemo}{fg=white,bg=ob7BlueLight}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7BlueLightDemo}
+            \texttt{ob7BlueLight}
         \end{beamercolorbox}
 
     \end{multicols}
@@ -120,106 +129,106 @@
 \begin{frame}{Colors 2/2}
     \begin{multicols}{2}
 
-        \setbeamercolor{hriSec1Demo}{fg=hriSec1,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriSec1Demo}
-            \texttt{hriSec1}
+        \setbeamercolor{ob7Sec1Demo}{fg=ob7Sec1,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7Sec1Demo}
+            \texttt{ob7Sec1}
         \end{beamercolorbox}
-        \setbeamercolor{hriSec1DarkDemo}{fg=hriSec1Dark,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriSec1DarkDemo}
-            \texttt{hriSec1Dark}
+        \setbeamercolor{ob7Sec1DarkDemo}{fg=ob7Sec1Dark,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7Sec1DarkDemo}
+            \texttt{ob7Sec1Dark}
         \end{beamercolorbox}
-        \setbeamercolor{hriSec1CompDemo}{fg=hriSec1Comp,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriSec1CompDemo}
-            \texttt{hriSec1Comp}
+        \setbeamercolor{ob7Sec1CompDemo}{fg=ob7Sec1Comp,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7Sec1CompDemo}
+            \texttt{ob7Sec1Comp}
         \end{beamercolorbox}
-        \setbeamercolor{hriSec1CompDarkDemo}{fg=hriSec1CompDark,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriSec1CompDarkDemo}
-            \texttt{hriSec1CompDark}
-        \end{beamercolorbox}
-
-        \setbeamercolor{hriSec2Demo}{fg=hriSec2,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriSec2Demo}
-            \texttt{hriSec2}
-        \end{beamercolorbox}
-        \setbeamercolor{hriSec2DarkDemo}{fg=hriSec2Dark,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriSec2DarkDemo}
-            \texttt{hriSec2Dark}
-        \end{beamercolorbox}
-        \setbeamercolor{hriSec2CompDemo}{fg=hriSec2Comp,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriSec2CompDemo}
-            \texttt{hriSec2Comp}
-        \end{beamercolorbox}
-        \setbeamercolor{hriSec2CompDarkDemo}{fg=hriSec2CompDark,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriSec2CompDarkDemo}
-            \texttt{hriSec2CompDark}
+        \setbeamercolor{ob7Sec1CompDarkDemo}{fg=ob7Sec1CompDark,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7Sec1CompDarkDemo}
+            \texttt{ob7Sec1CompDark}
         \end{beamercolorbox}
 
-        \setbeamercolor{hriSec3Demo}{fg=hriSec3,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriSec3Demo}
-            \texttt{hriSec3}
+        \setbeamercolor{ob7Sec2Demo}{fg=ob7Sec2,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7Sec2Demo}
+            \texttt{ob7Sec2}
         \end{beamercolorbox}
-        \setbeamercolor{hriSec3DarkDemo}{fg=hriSec3Dark,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriSec3DarkDemo}
-            \texttt{hriSec3Dark}
+        \setbeamercolor{ob7Sec2DarkDemo}{fg=ob7Sec2Dark,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7Sec2DarkDemo}
+            \texttt{ob7Sec2Dark}
         \end{beamercolorbox}
-        \setbeamercolor{hriSec3CompDemo}{fg=hriSec3Comp,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriSec3CompDemo}
-            \texttt{hriSec3Comp}
+        \setbeamercolor{ob7Sec2CompDemo}{fg=ob7Sec2Comp,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7Sec2CompDemo}
+            \texttt{ob7Sec2Comp}
         \end{beamercolorbox}
-        \setbeamercolor{hriSec3CompDarkDemo}{fg=hriSec3CompDark,bg=white}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{hriSec3CompDarkDemo}
-            \texttt{hriSec3CompDark}
-        \end{beamercolorbox}
-
-        \setbeamercolor{hriSec1DemoBg}{fg=white,bg=hriSec1}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriSec1DemoBg}
-            \texttt{hriSec1}
-        \end{beamercolorbox}
-        \setbeamercolor{hriSec1DarkDemoBg}{fg=white,bg=hriSec1Dark}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriSec1DarkDemoBg}
-            \texttt{hriSec1Dark}
-        \end{beamercolorbox}
-        \setbeamercolor{hriSec1CompDemoBg}{fg=white,bg=hriSec1Comp}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriSec1CompDemoBg}
-            \texttt{hriSec1Comp}
-        \end{beamercolorbox}
-        \setbeamercolor{hriSec1CompDarkDemoBg}{fg=white,bg=hriSec1CompDark}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriSec1CompDarkDemoBg}
-            \texttt{hriSec1CompDark}
+        \setbeamercolor{ob7Sec2CompDarkDemo}{fg=ob7Sec2CompDark,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7Sec2CompDarkDemo}
+            \texttt{ob7Sec2CompDark}
         \end{beamercolorbox}
 
-        \setbeamercolor{hriSec2DemoBg}{fg=white,bg=hriSec2}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriSec2DemoBg}
-            \texttt{hriSec2}
+        \setbeamercolor{ob7Sec3Demo}{fg=ob7Sec3,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7Sec3Demo}
+            \texttt{ob7Sec3}
         \end{beamercolorbox}
-        \setbeamercolor{hriSec2DarkDemoBg}{fg=white,bg=hriSec2Dark}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriSec2DarkDemoBg}
-            \texttt{hriSec2Dark}
+        \setbeamercolor{ob7Sec3DarkDemo}{fg=ob7Sec3Dark,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7Sec3DarkDemo}
+            \texttt{ob7Sec3Dark}
         \end{beamercolorbox}
-        \setbeamercolor{hriSec2CompDemoBg}{fg=white,bg=hriSec2Comp}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriSec2CompDemoBg}
-            \texttt{hriSec2Comp}
+        \setbeamercolor{ob7Sec3CompDemo}{fg=ob7Sec3Comp,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7Sec3CompDemo}
+            \texttt{ob7Sec3Comp}
         \end{beamercolorbox}
-        \setbeamercolor{hriSec2CompDarkDemoBg}{fg=white,bg=hriSec2CompDark}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriSec2CompDarkDemoBg}
-            \texttt{hriSec2CompDark}
+        \setbeamercolor{ob7Sec3CompDarkDemo}{fg=ob7Sec3CompDark,bg=white}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,dp=0.7ex]{ob7Sec3CompDarkDemo}
+            \texttt{ob7Sec3CompDark}
         \end{beamercolorbox}
 
-        \setbeamercolor{hriSec3Demo}{fg=white,bg=hriSec3}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriSec3Demo}
-            \texttt{hriSec3}
+        \setbeamercolor{ob7Sec1DemoBg}{fg=white,bg=ob7Sec1}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7Sec1DemoBg}
+            \texttt{ob7Sec1}
         \end{beamercolorbox}
-        \setbeamercolor{hriSec3DarkDemo}{fg=white,bg=hriSec3Dark}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriSec3DarkDemo}
-            \texttt{hriSec3Dark}
+        \setbeamercolor{ob7Sec1DarkDemoBg}{fg=white,bg=ob7Sec1Dark}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7Sec1DarkDemoBg}
+            \texttt{ob7Sec1Dark}
         \end{beamercolorbox}
-        \setbeamercolor{hriSec3CompDemo}{fg=white,bg=hriSec3Comp}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriSec3CompDemo}
-            \texttt{hriSec3Comp}
+        \setbeamercolor{ob7Sec1CompDemoBg}{fg=white,bg=ob7Sec1Comp}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7Sec1CompDemoBg}
+            \texttt{ob7Sec1Comp}
         \end{beamercolorbox}
-        \setbeamercolor{hriSec3CompDarkDemo}{fg=white,bg=hriSec3CompDark}
-        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{hriSec3CompDarkDemo}
-            \texttt{hriSec3CompDark}
+        \setbeamercolor{ob7Sec1CompDarkDemoBg}{fg=white,bg=ob7Sec1CompDark}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7Sec1CompDarkDemoBg}
+            \texttt{ob7Sec1CompDark}
+        \end{beamercolorbox}
+
+        \setbeamercolor{ob7Sec2DemoBg}{fg=white,bg=ob7Sec2}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7Sec2DemoBg}
+            \texttt{ob7Sec2}
+        \end{beamercolorbox}
+        \setbeamercolor{ob7Sec2DarkDemoBg}{fg=white,bg=ob7Sec2Dark}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7Sec2DarkDemoBg}
+            \texttt{ob7Sec2Dark}
+        \end{beamercolorbox}
+        \setbeamercolor{ob7Sec2CompDemoBg}{fg=white,bg=ob7Sec2Comp}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7Sec2CompDemoBg}
+            \texttt{ob7Sec2Comp}
+        \end{beamercolorbox}
+        \setbeamercolor{ob7Sec2CompDarkDemoBg}{fg=white,bg=ob7Sec2CompDark}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7Sec2CompDarkDemoBg}
+            \texttt{ob7Sec2CompDark}
+        \end{beamercolorbox}
+
+        \setbeamercolor{ob7Sec3Demo}{fg=white,bg=ob7Sec3}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7Sec3Demo}
+            \texttt{ob7Sec3}
+        \end{beamercolorbox}
+        \setbeamercolor{ob7Sec3DarkDemo}{fg=white,bg=ob7Sec3Dark}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7Sec3DarkDemo}
+            \texttt{ob7Sec3Dark}
+        \end{beamercolorbox}
+        \setbeamercolor{ob7Sec3CompDemo}{fg=white,bg=ob7Sec3Comp}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7Sec3CompDemo}
+            \texttt{ob7Sec3Comp}
+        \end{beamercolorbox}
+        \setbeamercolor{ob7Sec3CompDarkDemo}{fg=white,bg=ob7Sec3CompDark}
+        \begin{beamercolorbox}[wd=\linewidth,ht=2ex,leftskip=.5ex,dp=0.7ex]{ob7Sec3CompDarkDemo}
+            \texttt{ob7Sec3CompDark}
         \end{beamercolorbox}
 
     \end{multicols}
@@ -252,8 +261,8 @@
 \end{exampleblock}
 
 \begingroup
-\setbeamercolor{block title}{bg=hriSec2Dark}
-\setbeamercolor{block body}{bg=hriSec2}
+\setbeamercolor{block title}{bg=ob7Sec2Dark}
+\setbeamercolor{block body}{bg=ob7Sec2}
 \begin{block}{Block with custom color}
     Oulala!
 \end{block}
@@ -350,16 +359,16 @@
                 label/.style={midway, align=center, font=\scriptsize, fill=white}]
 
                 %%% ORO
-                \node at (0,0)[skill, ultra thick, fill=hriSec2Dark!50] (oro) {{\sc Oro} -- Symbolic facts \\ and beliefs management};
+                \node at (0,0)[skill, ultra thick, fill=ob7Sec2Dark!50] (oro) {{\sc Oro} -- Symbolic facts \\ and beliefs management};
 
                 %%% HATP
-                \node at (-6, 2.5)[skill, fill=hriSec1!50] (hatp) {HATP -- Human-aware \\ symbolic task planning};
+                \node at (-6, 2.5)[skill, fill=ob7Sec1!50] (hatp) {HATP -- Human-aware \\ symbolic task planning};
 
                 %%% DIALOGS
-                \node at (-6, -3) [skill, fill=hriSec3Dark!50] (dialogs) {{\sc Dialogs} \\ Dialogue processing};
+                \node at (-6, -3) [skill, fill=ob7Sec3Dark!50] (dialogs) {{\sc Dialogs} \\ Dialogue processing};
 
                 %%% SPARK
-                \node at (4,-3.5)[skill, fill=hriSec3!50] (spark) {%
+                \node at (4,-3.5)[skill, fill=ob7Sec3!50] (spark) {%
                     \begin{tikzpicture}
                         \node at (0,0) (geom) {{\sc Spark} -- Geometric \& Temporal Reasoning};
                         \node [subpart, below=0.2 of geom.south west, anchor=north west] (world-update) {Sensors fusion};
@@ -369,10 +378,10 @@
                 };
 
                 %%% MHP
-                \node at (9,0)[skill, fill=hriSec3CompDark!50] (mhp) {{\sc mhp} -- Human-aware \\ Motion and Manipulation \\ Planning};
+                \node at (9,0)[skill, fill=ob7Sec3CompDark!50] (mhp) {{\sc mhp} -- Human-aware \\ Motion and Manipulation \\ Planning};
 
                 %%% SHARY
-                \node at (4,4.5)[skill, fill=hriSec1Comp!50] (shary) {%
+                \node at (4,4.5)[skill, fill=ob7Sec1Comp!50] (shary) {%
                     \begin{tikzpicture}
                         \node at (0,0) (exec) {Execution Controller};
                         \node [subpart, below=0.2 of exec.south west, anchor=north west] (plans) {Goal \& Plans \\ management};
@@ -418,12 +427,12 @@
     \centering
     \begin{tikzpicture}[scale=0.88]
         %\tikzset{every child/.append style={level distance=250}}
-        \path[mindmap,concept color=hriWarmGreyLight,text=hriWarmGreyDark]
+        \path[mindmap,concept color=ob7BlueLight,text=ob7BlueDark]
         node[concept] {\TeX}
         [clockwise from=-30]
-        child[concept color=hriSec2Dark,text=white] { node[concept] {\textcolor{white}{A}} }
-        child[concept color=hriSec1CompDark,text=white] { node[concept] {B} }
-        child[concept color=hriSec1Dark,text=white] { node[concept] {C} };
+        child[concept color=ob7Sec2Dark,text=white] { node[concept] {\textcolor{white}{A}} }
+        child[concept color=ob7Sec1CompDark,text=white] { node[concept] {B} }
+        child[concept color=ob7Sec1Dark,text=white] { node[concept] {C} };
     \end{tikzpicture}
 \end{frame}
 
@@ -494,9 +503,3 @@
 \end{frame}
 
 \end{document}
-
-
-
-
-
-

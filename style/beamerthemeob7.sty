@@ -1,12 +1,13 @@
-% Name           : beamerthemehri.sty
+% Name           : beamerthemeob7.sty
+% Author         : Julien Lebranchu (julien.lebranchu@ird.fr)
 % Author         : Séverin Lemaignan (severin.lemaignan@epfl.ch)
 % Author         : Benjamin Weiss (benjamin.weiss@kreatiefton.de)
 % License        : This file may be distributed and/or modified under the
 %                  GNU Public License.
 
-\ProvidesPackage{beamerthemehri}[2013/05/05]
+\ProvidesPackage{beamerthemeob7}[2020/05/15]
 
-\usepackage{color}
+\usepackage{xcolor}
 \usepackage{etoolbox}
 \usepackage{eso-pic}
 \usepackage{tikz}
@@ -76,39 +77,40 @@
 %---------------------------------------------------------------------
 
 % Primary Colors
-\definecolor{hriRed}{rgb}{0.882352941,0,0.098039216}
-\definecolor{hriRedDark}{rgb}{0.588235294,0,0.058823529}
-\definecolor{hriWarmGreyDark}{rgb}{0.274509804,0.254901961,0.235294118}
-\definecolor{hriWarmGreyLight}{rgb}{0.666666667,0.647058824,0.62745098}
+\definecolor{ob7Red}{RGB}{227,6,19}
+\definecolor{ob7RedDark}{RGB}{139,0,0}
+\definecolor{ob7BlueDark}{RGB}{0,86,164}
+\definecolor{ob7BlueLight}{RGB}{0,159,227}
+\definecolor{ob7BlueIRD}{RGB}{15,112,183}
 
 % Secondary Colors
-\definecolor{hriSec1}{rgb}{0,0.588235294,0.509803922}
-\definecolor{hriSec1Dark}{rgb}{0,0.392156863,0.31372549}
-\definecolor{hriSec1Comp}{rgb}{0.294117647,0.745098039,0.882352941}
-\definecolor{hriSec1CompDark}{rgb}{0.196078431,0.490196078,0.568627451}
+\definecolor{ob7Sec1}{rgb}{0,0.588235294,0.509803922}
+\definecolor{ob7Sec1Dark}{rgb}{0,0.392156863,0.31372549}
+\definecolor{ob7Sec1Comp}{rgb}{0.294117647,0.745098039,0.882352941}
+\definecolor{ob7Sec1CompDark}{rgb}{0.196078431,0.490196078,0.568627451}
 
-\definecolor{hriSec2}{rgb}{0.607843137,0.764705882,0.156862745}
-\definecolor{hriSec2Dark}{rgb}{0.411764706,0.490196078,0.098039216}
-\definecolor{hriSec2Comp}{rgb}{0.254901961,0.156862745,0.509803922}
-\definecolor{hriSec2CompDark}{rgb}{0.176470588,0.098039216,0.333333333}
+\definecolor{ob7Sec2}{rgb}{0.607843137,0.764705882,0.156862745}
+\definecolor{ob7Sec2Dark}{rgb}{0.411764706,0.490196078,0.098039216}
+\definecolor{ob7Sec2Comp}{rgb}{0.254901961,0.156862745,0.509803922}
+\definecolor{ob7Sec2CompDark}{rgb}{0.176470588,0.098039216,0.333333333}
 
-\definecolor{hriSec3}{rgb}{0.509803922,0.078431373,0.31372549}
-\definecolor{hriSec3Dark}{rgb}{0.338345865,0.058823529,0.196078431}
-\definecolor{hriSec3Comp}{rgb}{1,0.509803922,0}
-\definecolor{hriSec3CompDark}{rgb}{0.666666667,0.333333333,0}
+\definecolor{ob7Sec3}{rgb}{0.509803922,0.078431373,0.31372549}
+\definecolor{ob7Sec3Dark}{rgb}{0.338345865,0.058823529,0.196078431}
+\definecolor{ob7Sec3Comp}{rgb}{1,0.509803922,0}
+\definecolor{ob7Sec3CompDark}{rgb}{0.666666667,0.333333333,0}
 
 % General
-\setbeamercolor{normal text}{fg=hriWarmGreyDark}
-\setbeamercolor{structure}{fg=hriWarmGreyDark}
-\setbeamercolor{alerted text}{fg=hriRed}
+\setbeamercolor{normal text}{fg=ob7BlueIRD}
+\setbeamercolor{structure}{fg=ob7RedDark}
+\setbeamercolor{alerted text}{fg=ob7Red}
 \setbeamercolor{example text}{fg=white}
-\setbeamercolor{copyright text}{fg=hriWarmGreyLight}
-\setbeamercolor{palette primary}{fg=hriWarmGreyDark}
-\setbeamercolor{palette secondary}{fg=hriWarmGreyDark,bg=hriWarmGreyLight}
-\setbeamercolor{palette tertiary}{fg=black,bg=hriWarmGreyLight}
-\setbeamercolor{palette quaternary}{fg=white, bg=hriWarmGreyDark}
+\setbeamercolor{copyright text}{fg=ob7BlueLight}
+\setbeamercolor{palette primary}{fg=ob7BlueDark}
+\setbeamercolor{palette secondary}{fg=ob7BlueDark,bg=ob7BlueLight}
+\setbeamercolor{palette tertiary}{fg=black,bg=ob7BlueLight}
+\setbeamercolor{palette quaternary}{fg=white, bg=ob7BlueDark}
 % Titlepage
-\setbeamercolor{title}{parent=normal text}
+\setbeamercolor{title}{parent=normal text,fg=ob7BlueIRD}
 \setbeamercolor{subtitle}{parent=normal text}
 \setbeamercolor{institute}{parent=normal text}
 % Content
@@ -116,16 +118,16 @@
 % Blocks
 \setbeamercolor{block title}{parent=palette quaternary}
 \setbeamercolor{block body}{parent=palette secondary}
-\setbeamercolor{block title example}{fg=white, bg=hriSec1Dark}
-\setbeamercolor{block body example}{fg=white, bg=hriSec1}
-\setbeamercolor{block title alerted}{fg=white, bg=hriRedDark}
-\setbeamercolor{block body alerted}{fg=white, bg=hriRed}
+\setbeamercolor{block title example}{fg=white, bg=ob7Sec1Dark}
+\setbeamercolor{block body example}{fg=white, bg=ob7Sec1}
+\setbeamercolor{block title alerted}{fg=white, bg=ob7RedDark}
+\setbeamercolor{block body alerted}{fg=white, bg=ob7Red}
 % Notes
-\setbeamercolor{note page}{fg=hriWarmGreyDark,bg=hriWarmGreyLight}
-\setbeamercolor{note title}{fg=white, bg=hriWarmGreyDark}
+\setbeamercolor{note page}{fg=ob7BlueDark,bg=ob7BlueLight}
+\setbeamercolor{note title}{fg=white, bg=ob7BlueDark}
 \setbeamercolor{note date}{parent=note title}
 % Page Number
-\setbeamercolor{page number in head/foot}{fg=hriWarmGreyDark}
+\setbeamercolor{page number in head/foot}{fg=ob7BlueDark}
 
 %---------------------------------------------------------------------
 % Fonts
@@ -139,8 +141,9 @@
 
 
 \usepackage{fontspec}
-\setmainfont{Flama}[Extension=.otf,UprightFont=*Light,BoldFont=*Medium,ItalicFont=*Italic]
-\setsansfont{Flama}[Extension=.otf,UprightFont=*Light,BoldFont=*Medium,ItalicFont=*Italic]
+%\setmainfont{Liberation Sans}
+%\setmainfont{Flama}[Extension=.otf,UprightFont=*Light,BoldFont=*Medium,ItalicFont=*Italic]
+%\setsansfont{Flama}[Extension=.otf,UprightFont=*Light,BoldFont=*Medium,ItalicFont=*Italic]
 %\setsansfont{FlamaLight}[Extension=.otf]
 
 %\setsansfont{FlamaLight.otf}%
@@ -227,7 +230,7 @@
 {
 \begingroup
 \setbeamertemplate{background}{}
-\setbeamercolor{background canvas}{bg=hriWarmGreyDark}
+\setbeamercolor{background canvas}{bg=ob7BlueDark}
 \begin{frame}[plain]
 \centering
 \vfill\usebeamerfont{section title}\textcolor{white}{\insertsectionHEAD}\vfill
@@ -401,7 +404,7 @@
         \ifdefequal{\bgCaption}{\empty}{%
         }{%
             \begin{tikzpicture}[remember picture,overlay]
-                \node at (-1, -4.5) [anchor=south west,shape=rectangle,fill=hriSec3Dark, opacity=0.7, align=right, text width=0.6\paperwidth]
+                \node at (-1, -4.5) [anchor=south west,shape=rectangle,fill=ob7Sec3Dark, opacity=0.7, align=right, text width=0.6\paperwidth]
                 {\usebeamerfont{subtitle}\usebeamercolor[bg]{subtitle}\bgCaption\par};
             \end{tikzpicture}
         }%
@@ -538,7 +541,7 @@
 }
 
 \NewDocumentCommand{\bubble}{r<> O{230} O{0.5cm} O{2cm} m m}{%
-\tikz[remember picture, overlay]\node[align=center, fill=hriSec3Comp!60,font=\footnotesize, text width=#4,
+\tikz[remember picture, overlay]\node[align=center, fill=ob7Sec3Comp!60,font=\footnotesize, text width=#4,
 opacity=0.8,text opacity=1,visible on=<#1>,rectangle callout,anchor=pointer,callout relative pointer={(#2:#3)}]
 at (#5) {#6};
 }
